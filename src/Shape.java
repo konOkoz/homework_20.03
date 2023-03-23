@@ -1,6 +1,9 @@
 public interface Shape {
 
-    void perimetr();
-    void ploshad();
+    double perimetr();
+    double ploshad();
+    static double totalSquare(Circle oc,Rectangle or){
+       return oc.ploshad()+or.ploshad();
+    }
 
 }

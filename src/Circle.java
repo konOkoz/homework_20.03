@@ -1,15 +1,17 @@
 public class Circle implements Shape{
     double radius;
+    double result;
 
     Circle(double radius){
         this.radius=radius;
     }
 
-    public void perimetr(){
-        System.out.println("Периметр вашего круга: "+(2*Math.PI*radius));
+    public double perimetr(){
+     return result =2*Math.PI*radius;
     }
-    public void ploshad(){
-        System.out.println("Площадь вашего круга: "+(Math.PI*Math.pow(radius,2)));
+    public double ploshad(){
+       return result = Math.PI*Math.pow(radius,2);
+
     }
 
 }
